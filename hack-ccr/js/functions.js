@@ -7,22 +7,11 @@ $(function(){
 var functions = new Vue({
     el: '#app',
     data: {
-      counter: 0,
-      showAlert: false,
-      cadastro : false,
-      login: true,
-      camisa: true,
-      moletom: false,
-      jaqueta: false,
-      lancamento: false,
-      typeUser: [{type : "Login"},{button : "Entrar"}],
-      valor: 0,
-      quantidade: 0,
-      indivialValue: 0,
-      produtos: [
-        {img: "img/camisa-1.jpg", total: 0, preco: 0},
-        {img: "img/camisa-2.jpg", total: 0, preco: 0},
-        {img: "img/camisa-3.jpg", total: 0, preco: 0}
+      school: [
+        {id: 1, name: "Escolaridade"},
+        {id: 2, name: "Ensino Fundamental"},
+        {id: 3, name: "Ensino Médio"},
+        {id: 4, name: "Ensino Superior"},
       ],
       finalPreco: 0,
     },
