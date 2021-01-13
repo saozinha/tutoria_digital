@@ -73,12 +73,33 @@ html,body{
     border: none;
 }
 
-.btn-next{
+.btn-cadastrar{
     background-color: #563688;
     color: #fff;
     border: none;
 }
 
-.btn-next:hover{
+.btn-cadastrar:hover{
     color: #fff;
+}
+
+
+.btn-login{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.btn-login:hover{
+    color: #fff;
+}
+
+@media screen and (max-width:768px){
+    .nav-tabs{
+        width: 50%;
+    }
+    .box-create{
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
 }
