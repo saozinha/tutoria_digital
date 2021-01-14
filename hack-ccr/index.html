@@ -14,7 +14,7 @@
 
 <body>
     <div id="app" class="p-5">
-        <div class="row box">
+        <div class="row box d-flex">
             <div class="col-md-4 p-5 text-center box-welcome">
                 <div class="title-login mt-5">
                     <i class="fas fa-rocket rocket"></i>
@@ -23,7 +23,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur<br>
                         Vestibulum vitae lorem ac sem finibus.</p>
 
-                        <button v-on:click="login = !login, cadastro = !cadastro" type="button" class="btn btn-login">{{!login ? "Fazer Login" : "Fazer Cadastro"}}</button>
+                        <button v-on:click="forgot = false, login = !login, cadastro = !cadastro" type="button" class="btn btn-login">{{!login ? "Fazer Login" : "Fazer Cadastro"}}</button>
                 </div>
             </div>
             <div class="col-md-8 text-center box-create">
@@ -152,8 +152,8 @@
                         </div>
                         <button type="button" class="btn btn-cadastrar" v-if="!forgot">{{login ? "Entrar" : "Cadastrar"}}</button><br>
                         <button type="button" class="btn btn-cadastrar" v-if="forgot">Enviar</button><br>
-                        <div class="mt-3" v-if="login">
-                            <a href="#" class="mt-3" v-on:click="forgot = true">Esqueceu a Senha ?</a>
+                        <div v-if="login && !forgot">
+                            <a href="#" v-on:click="forgot = true">Esqueceu a Senha ?</a>
                         </div>
                     </div>
                 </div>

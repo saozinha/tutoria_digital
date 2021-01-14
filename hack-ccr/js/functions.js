@@ -1,9 +1,3 @@
-$(function(){
-  $('nav.mobile-menu').click(function(){
-      $('nav.mobile-menu').find('ul').slideToggle();
-  });
-});
-
 var functions = new Vue({
     el: '#app',
     data: {
@@ -28,20 +22,7 @@ var functions = new Vue({
         {id: 7, name: "Química"},
         {id: 8, name: "Inglês"},
       ],
-      finalPreco: 0,
     },
-    methods: {
-        add: function (preco) {
-          this.showAlert = true;
-          this.valor += preco;
-        },
-        verifyLogin: function (){
-          this.login = false;
-          this.cadastro = true;
-          this.typeUser[0].type = "Cadastro";
-          this.typeUser[1].button = "Cadastrar";
-        },      
-      },
   })
 
   
