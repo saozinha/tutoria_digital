@@ -6,4 +6,4 @@
  #A plataforma Tutoria Digital gera oportunidades para professores de todo brasil complementar sua renda através de aulas e suporte a alunos.
   
  - print the page 
-![print screeen](https://github.com/saozinha/tutoria_digital/tree/main/hack-ccr/blob/master/img/formulario.png?raw=true) 
+![print screeen](https://github.com/saozinha/tutoria_digital/tree/main/hack-ccr/blob/master/img/formulario.jpeg?raw=true) 
